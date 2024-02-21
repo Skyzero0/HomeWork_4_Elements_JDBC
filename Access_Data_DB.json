@@ -1,0 +1,5 @@
+{
+  "jdbcUrl": "jdbc:h2:D:\\Java\\workspace\\GO-IT\\GO-IT-DEV\\HomeWork_3_DB\\HomeWork_3_DB",
+  "jdbcUser": "sa",
+  "jdbcPassword": ""
+}
