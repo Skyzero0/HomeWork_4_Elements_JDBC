@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Elements_JDBS.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Elements_JDBS.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Elements_JDBC.iml" filepath="$PROJECT_DIR$/.idea/modules/Elements_JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Elements_JDBC.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Elements_JDBC.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Elements_JDBC.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Elements_JDBC.test.iml" />
     </modules>
   </component>
 </project>

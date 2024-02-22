@@ -1,4 +1,4 @@
-package select_DB;
+package model;
 
 public class ProjectPrices {
     private String name;

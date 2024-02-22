@@ -1,6 +1,6 @@
 package jdbc;
 
-import select_DB.*;
+import model.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -51,7 +51,7 @@ public class DatabaseQueryService {
 //    }
 
     public List <ProjectPrices> printProjectPrices() throws IOException {
-        sql = Files.readString(Path.of("app\\sql\\print_project_prices.sql"));
+        sql = Files.readString(Path.of("sql\\print_project_prices.sql"));
 
         List <ProjectPrices> list_pr = new ArrayList<>();
 
@@ -69,7 +69,7 @@ public class DatabaseQueryService {
     }
 
     public List <YoungestEldestWorker> findYoungestEldestWorkers() throws IOException {
-        sql = Files.readString(Path.of("app\\sql\\find_youngest_eldest_workers.sql"));
+        sql = Files.readString(Path.of("sql\\find_youngest_eldest_workers.sql"));
 
         List <YoungestEldestWorker> list_yew = new ArrayList<>();
 
@@ -89,7 +89,7 @@ public class DatabaseQueryService {
     }
 
     public List <MaxSalaryWorker> findMaxSalaryWorker () throws IOException {
-        sql = Files.readString(Path.of("app\\sql\\find_max_salary_worker.sql"));
+        sql = Files.readString(Path.of("sql\\find_max_salary_worker.sql"));
 
         List <MaxSalaryWorker> maxSal = new ArrayList<>();
 
@@ -106,7 +106,7 @@ public class DatabaseQueryService {
     }
 
     public List <MaxProjectsClient> findMaxProjectsClient() throws IOException {
-        sql = Files.readString(Path.of("app\\sql\\find_max_projects_client.sql"));
+        sql = Files.readString(Path.of("sql\\find_max_projects_client.sql"));
 
         List <MaxProjectsClient> list_mpc = new ArrayList<>();
 
@@ -126,7 +126,7 @@ public class DatabaseQueryService {
     }
 
     public List <LongestProject> findLongestProject() throws IOException {
-        sql = Files.readString(Path.of("app\\sql\\find_longest_project.sql"));
+        sql = Files.readString(Path.of("sql\\find_longest_project.sql"));
 
         List <LongestProject> list_lp = new ArrayList<>();
 

@@ -1,4 +1,4 @@
-package select_DB;
+package model;
 
 import java.sql.Date;
 

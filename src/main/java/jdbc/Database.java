@@ -8,9 +8,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Database {
-    public static Database INSTANCE = new Database();
+    private static volatile Database INSTANCE;
 
-    private Connection connection;
+    private final Connection connection;
 
     public Database () {
         try {
@@ -28,7 +28,14 @@ public class Database {
         }
     }
 
-    public static Database getInstance() {
+    public static synchronized Database getInstance() {
+        if(INSTANCE == null) {
+            synchronized (Database.class) {
+                if(INSTANCE == null){
+                    INSTANCE = new Database();
+                }
+            }
+        }
         return INSTANCE;
     }
 
